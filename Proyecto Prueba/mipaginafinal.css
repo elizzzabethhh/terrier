@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500;700&display=swap');
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 150px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: whitesmoke;
+    width: 100%;
+    padding: 0px;
+}
+
+.nav_ul{
+    display: flex;
+    list-style: none;
+}
+
+.nav_ul li{
+    padding: 20px;
+    text-decoration: none;
+    border-radius: 10px; color: rgb(0, 0, 0);
+    margin: 25px;
+    font-family: 'Rubik', sans-serif;
+}
+
+.nav_ul li:hover{
+    background-color: #ddd;
+}
+
+.logo img{
+    height: 150px;
+    align-items: center;
+    padding-left: 30px;
+}
+
+.section1{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 900px;
+    height: 5000px;
+    border-radius: 30px;
+    margin-left: 220px;
+}
+
+.contenido_section1 h1{
+    display: flex;
+    justify-content: center;
+    margin-top: 160px;
+    font-size: 40px;
+    font-family: 'Rubik', sans-serif;
+    color: rgb(97, 20, 20)
+}
+
+.contenedor_slider{
+    width: 700px;
+    height: 350px;
+    margin: 50px auto 0;
+    overflow: hidden;
+    border: 2px solid;
+}
+
+.contenedor_slider ul{
+    display: flex;
+    width: 300%;
+    animation: moverimagen 12s infinite ease-in-out;
+}
+
+.contenedor_slider li{
+    width: 100%;
+}
+
+.contenido_slider img{
+    width: 700px;
+    height: 410px;
+    object-fit: contain;
+}
+
+@keyframes moverimagen{
+    0% {margin-left: 0;}
+    20% {margin-left: 0;}
+
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+
+    75% {margin-left: -300%;}
+    100% {margin-left: -300%;}
+}
+
+.contenido_section1 p{
+    font-size: 22px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: lighter;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.foto6 img{
+    width: 650px;
+    margin-left: 120px;
+    margin-top: 40px;
+    border-radius: 20px;
+}
+
+.foto7 img{
+    width: 650px;
+    margin-left: 120px;
+    border-radius: 20px;
+}
+
+.foto8 img{
+    width: 650px;
+    margin-left: 120px;
+    border-radius: 20px;
+}
+
+.h2a{
+    display: flex;
+    justify-content: center;
+    margin-top: 45px;
+    font-size: 27px;
+    font-family: 'Rubik', sans-serif;
+    color: rgb(97, 20, 20)
+}
+
+.h2b{
+    display: flex;
+    justify-content: center;
+    margin-top: 45px;
+    font-size: 27px;
+    font-family: 'Rubik', sans-serif;
+    color: rgb(97, 20, 20)
+}
+
+.h2c{
+    display: flex;
+    justify-content: center;
+    margin-top: 45px;
+    margin-bottom: 20px;
+    font-size: 27px;
+    font-family: 'Rubik', sans-serif;
+    color: rgb(97, 20, 20)
+}
+
+
+.carrusel{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    max-width: 1000px;
+}
+
+.carrusel ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    max-width: 510px;
+    scroll-behavior: smooth;
+}
+
+.carrusel-fotos{
+    display: flex;
+    gap: 10px;
+    overflow: auto;
+}
+
+.carrusel-fotos img{
+    width: 300px;
+    height: 200px ;
+    border: 3px solid black;
+    background: black;
+    object-fit: contain;
+}
+ 
+.carrusel-menu{
+    display: none;
+}
+
+@media screen and (min-width: 500px) {
+    .carrusel-fotos{
+        overflow: hidden;
+    }
+    .carrusel-fotos img{
+        width: 500px;
+        height: 400px;
+
+    }
+    .carrusel-menu{
+        display: block;
+    }
+    .carrusel-menu img{
+        box-sizing: border-box;
+        width: 50px;
+        height: 40px;
+        border: 5px solid black;
+    }
+    .carrusel-menu img:hover{
+        border: none;
+    }
+}
+
+
+
+
